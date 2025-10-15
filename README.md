@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Quick Test Series — Interactive Quiz App
 
-## Getting Started
+An interactive **quiz web application** built using **Next.js 15**, **Material UI (MUI)**, **Framer Motion**, **React Hook Form**, and **Zod** for validation.  
+This app allows users to take a test one question at a time, review their performance instantly, and view an animated 3D scorecard.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+✅ Dynamic question rendering from JSON  
+✅ One-question-at-a-time navigation (Prev / Next)  
+✅ Progress bar showing real-time quiz progress  
+✅ Form validation using Zod + React Hook Form  
+✅ Smooth animations with Framer Motion  
+✅ Inline answer validation (correct/wrong with icons)  
+✅ 3D animated scorecard with tilt interaction  
+✅ Fully reusable modular components  
+✅ Responsive, modern UI design powered by MUI  
+
+---
+
+## 🧩 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Framework | [Next.js 15 (App Router)](https://nextjs.org/docs/app) |
+| UI Library | [Material UI (MUI v6)](https://mui.com/) |
+| Animations | [Framer Motion](https://www.framer.com/motion/) |
+| Forms | [React Hook Form](https://react-hook-form.com/) |
+| Validation | [Zod](https://zod.dev/) |
+| Icons | [@mui/icons-material](https://mui.com/material-ui/material-icons/) |
+| Language | TypeScript |
+
+---
+
+## 🛠️ Installation & Setup
+
+Clone the repository and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/<your-username>/quick-test-series.git
+cd quick-test-series
+npm install
