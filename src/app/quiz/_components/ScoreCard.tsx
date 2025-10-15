@@ -2,19 +2,13 @@
 
 import { useRef } from "react";
 import { Card, Typography } from "@mui/material";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents"; // Trophy
-import BoltIcon from "@mui/icons-material/Bolt"; // For well done
-import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt"; // For keep practicing
-import WhatshotIcon from "@mui/icons-material/Whatshot"; // For perfect score
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import BoltIcon from "@mui/icons-material/Bolt";
+import PsychologyAltIcon from "@mui/icons-material/PsychologyAlt";
+import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
-export function ScoreCard({
-  score,
-  total,
-}: {
-  score: number;
-  total: number;
-}) {
+export function ScoreCard({ score, total }: { score: number; total: number }) {
   const cardRef = useRef<HTMLDivElement>(null);
 
   // Base motion values

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import {
   Button,
   Box,
@@ -12,7 +12,7 @@ import {
 import { useForm, useFieldArray } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { questionList } from "./data/question";
 import QuestionCard from "./quiz/_components/QuestionCard";
 import OptionGroup from "./quiz/_components/OptionGroup";
@@ -34,13 +34,14 @@ export default function QuizPage() {
     shouldUnregister: false,
   });
 
-  const { fields } = useFieldArray({
+  useFieldArray({
     control,
     name: "answers",
   });
 
   const answers = watch("answers");
-  const nextQuestion = () => current < questionList.length - 1 && setCurrent(current + 1);
+  const nextQuestion = () =>
+    current < questionList.length - 1 && setCurrent(current + 1);
   const prevQuestion = () => current > 0 && setCurrent(current - 1);
 
   const onSubmit = (data: SchemaType) => {
@@ -191,7 +192,7 @@ export default function QuizPage() {
         </Card>
       </motion.div>
 
-      {/* ✅ 3D Score Card */}
+      {/*  3D Score Card */}
       {submitted && score !== null && (
         <ScoreCard score={score} total={questionList.length} />
       )}
